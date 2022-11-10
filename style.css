@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #3ca093;
+  background: #b39ca2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@ body {
 
 .container .left_side {
   position: relative;
-  background: #255869;
+  background: #756376;
   padding: 40px;
 }
 
@@ -93,7 +93,6 @@ body {
   position: relative;
   list-style: none;
   margin: 10px 0;
-  cursor: pointer;
 }
 
 .contact_info ul li .icon {
@@ -103,9 +102,18 @@ body {
   color: #000000;
 }
 
-.contact_info ul li span {
+.contact_info ul li a {
   color: #061728;
   font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact_info ul li a:hover {
+  color: #00091a;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .contact_info.education li {
@@ -146,7 +154,7 @@ body {
 
 .container .right_side {
   position: relative;
-  background: #26747c;
+  background: #c8b8b8;
   padding: 40px;
 }
 
@@ -220,4 +228,11 @@ p{
   color: #00091a;
   font-weight: 600;
   font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
